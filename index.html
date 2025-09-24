@@ -11,11 +11,9 @@
   <meta property="og:title" content="Hela | Official Website">
   <meta property="og:description" content="Hela is a casual mini-game collection including Bomb Flip, Number Guess, and Poker Dragon.">
   <meta property="og:url" content="https://jellystudio.github.io/hela.html">
-  <meta property="og:image" content="https://jellystudio.github.io/assets/hela/cover.png">
 
-  <!-- Favicon / PWA -->
+  <!-- Favicon -->
   <link rel="icon" href="https://jellystudio.github.io/assets/favicon.png">
-  <link rel="apple-touch-icon" href="https://jellystudio.github.io/assets/apple-touch-icon.png">
 
   <style>
     :root {
@@ -28,7 +26,6 @@
       --shadow: 0 10px 30px rgba(0,0,0,0.12);
       --radius: 14px;
     }
-    * { box-sizing: border-box; }
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif; color: var(--text); line-height: 1.7; }
     header {
       background: linear-gradient(135deg, var(--bg1), var(--bg2));
@@ -36,11 +33,9 @@
       padding: 56px 20px 36px;
       text-align: center;
     }
-    header h1 { margin: 0 0 10px; font-size: 36px; letter-spacing: .5px; }
+    header h1 { margin: 0 0 10px; font-size: 36px; }
     header p { margin: 0 auto; max-width: 760px; opacity: .95; }
-    .cta {
-      display: inline-flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; justify-content: center;
-    }
+    .cta { display: inline-flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; justify-content: center; }
     .btn {
       display: inline-flex; align-items: center; gap: 10px;
       padding: 12px 18px; border-radius: 12px; background: rgba(255,255,255,.14);
@@ -48,30 +43,15 @@
       transition: transform .15s ease, background .15s ease;
     }
     .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,.22); }
-    main { max-width: 1000px; margin: 0 auto; padding: 26px 18px 40px; }
+    main { max-width: 900px; margin: 0 auto; padding: 26px 18px 40px; }
     section { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; margin-top: 18px; }
     h2 { font-size: 22px; margin: 0 0 8px; }
-    .muted { color: var(--muted); font-size: 14px; }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .feature { background: #f8faff; border: 1px solid #e7ecff; border-radius: 12px; padding: 14px; }
-    .feature h3 { margin: 0 0 6px; font-size: 18px; }
-    .kv {
-      background: linear-gradient(135deg, #f7f8ff, #f0f7ff);
-      border: 1px solid #e7ecff; border-radius: 12px; padding: 16px; text-align: center;
-    }
-    .kv img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
     .list { padding-left: 18px; margin: 8px 0 0; }
     a { color: var(--link); }
-    footer { max-width: 1000px; margin: 0 auto; padding: 22px 18px 60px; color: var(--muted); font-size: 14px; }
-    .two { display: grid; grid-template-columns: 1.2fr .8fr; gap: 14px; }
-    @media (max-width: 820px) {
-      .grid { grid-template-columns: 1fr; }
-      .two { grid-template-columns: 1fr; }
-    }
+    footer { max-width: 900px; margin: 0 auto; padding: 22px 18px 60px; color: var(--muted); font-size: 14px; }
     .tag { display: inline-block; font-size: 12px; padding: 4px 8px; border-radius: 999px; background: #eef3ff; color: #3556d6; border: 1px solid #dce6ff; }
     .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
     .small { font-size: 13px; color: var(--muted); }
-    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; background: #f3f5f9; border: 1px solid #e5eaf3; padding: 2px 6px; border-radius: 6px; }
     .pill { display: inline-block; padding: 8px 12px; border: 1px solid #e8edf9; border-radius: 10px; background: #fbfcff; }
   </style>
 </head>
@@ -95,21 +75,15 @@
 </header>
 
 <main>
-  <section class="two">
-    <div class="kv">
-      <img src="https://jellystudio.github.io/assets/hela/cover.png" alt="Hela App Preview">
-      <div class="small" style="margin-top:8px;">Preview image for reference only. Features and UI may change with updates.</div>
-    </div>
-    <div>
-      <h2>About Hela</h2>
-      <p>Hela is designed for short gaming sessions with simple rules and fast-paced gameplay. No account or registration is required. Featuring a clean interface and smooth animations, it’s perfect for relaxing, passing time, or friendly challenges.</p>
-      <ul class="list">
-        <li>Lightweight, fast startup, offline playable</li>
-        <li>Multiple modes: Bomb Flip, Number Guess, Poker Dragon</li>
-        <li>Supports Chinese interface, continuously updated</li>
-      </ul>
-      <p class="small">Last updated: 2025-09-24</p>
-    </div>
+  <section>
+    <h2>About Hela</h2>
+    <p>Hela is designed for short gaming sessions with simple rules and fast-paced gameplay. No account or registration is required. Featuring a clean interface and smooth animations, it’s perfect for relaxing, passing time, or friendly challenges.</p>
+    <ul class="list">
+      <li>Lightweight, fast startup, offline playable</li>
+      <li>Multiple modes: Bomb Flip, Number Guess, Poker Dragon</li>
+      <li>Continuously updated with improvements</li>
+    </ul>
+    <p class="small">Last updated: 2025-09-24</p>
   </section>
 
   <section>
@@ -117,20 +91,11 @@
       <h2>Main Features</h2>
       <span class="tag">For all ages</span>
     </div>
-    <div class="grid" style="margin-top:10px;">
-      <div class="feature">
-        <h3>Bomb Flip</h3>
-        <p>Explore the grid carefully and avoid stepping on bombs. Supports various board sizes and custom challenge levels.</p>
-      </div>
-      <div class="feature">
-        <h3>Number Guess</h3>
-        <p>A classic guessing game: follow hints to gradually reach the answer. Simple, fun, and great for quick play.</p>
-      </div>
-      <div class="feature">
-        <h3>Poker Dragon</h3>
-        <p>Decide if your card is higher, lower, or in between two revealed cards. A fast-paced mix of luck and judgment.</p>
-      </div>
-    </div>
+    <ul class="list">
+      <li><strong>Bomb Flip:</strong> Explore the grid carefully and avoid bombs. Customizable board sizes and challenge levels.</li>
+      <li><strong>Number Guess:</strong> Classic guessing game: follow hints to gradually reach the answer. Simple and fun.</li>
+      <li><strong>Poker Dragon:</strong> Decide if your card is higher, lower, or in between two revealed cards. Fast-paced and exciting.</li>
+    </ul>
   </section>
 
   <section>
@@ -178,24 +143,6 @@
     <div class="small">Email: <a href="mailto:jellystudio68@gmail.com">jellystudio68@gmail.com</a></div>
   </div>
 </footer>
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Hela",
-  "operatingSystem": "iOS, iPadOS",
-  "applicationCategory": "GameApplication",
-  "creator": { "@type": "Organization", "name": "Jelly Studio" },
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "url": "https://jellystudio.github.io/hela.html",
-  "downloadUrl": "https://apps.apple.com/app/idXXXXXXXXX",
-  "softwareVersion": "1.0",
-  "supportUrl": "mailto:jellystudio68@gmail.com",
-  "privacyPolicy": "https://jellystudio.github.io/privacy.html"
-}
-</script>
 
 </body>
 </html>
