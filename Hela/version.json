@@ -1,0 +1,10 @@
+{
+  "latestVersion": "1.0.1",
+  "minSupportedVersion": "1.0.0",
+  "forceUpdate": false,
+  "message": "App 更新：Poker Dragon 新增特殊牌型！",
+  "downloadUrl": {
+    "test": "https://jellystudio.github.io",
+    "release": "https://apps.apple.com/app/id你的AppID"
+  }
+}
