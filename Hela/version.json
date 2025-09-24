@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.1",
-  "minSupportedVersion": "1.0",
+  "latestVersion": "1.0.0",
+  "minSupportedVersion": "0.0.0",
   "forceUpdate": false,
   "message": "App 更新：Poker Dragon 新增特殊牌型！",
   "downloadUrl": {
