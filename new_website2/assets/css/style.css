@@ -1,0 +1,178 @@
+/* ---- Global ---- */
+body {
+  margin: 0;
+  font-family: Verdana, Arial, sans-serif;
+  background: linear-gradient(to bottom, #66ccff, #ffffff);
+  color: #000;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Header ---- */
+header {
+  background: linear-gradient(to bottom, #0066cc, #003366);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #000080;
+  position: relative;
+}
+
+header h1 {
+  font-family: Impact, Arial Black, sans-serif;
+  font-size: 42px;
+  text-shadow: 2px 2px #000;
+  margin: 0 0 10px;
+}
+
+/* 加一條閃亮分隔線 */
+header::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  margin-top: 20px;
+}
+
+/* ---- CTA Buttons ---- */
+.cta {
+  display: inline-flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #003366;
+  background: linear-gradient(to bottom, #66ccff, #0066cc);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.2s;
+  animation: glow 2s infinite alternate;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #99ccff, #003366);
+  transform: scale(1.05);
+}
+
+/* 發光效果 */
+@keyframes glow {
+  from { box-shadow: 0 0 4px #fff; }
+  to { box-shadow: 0 0 12px #ff0; }
+}
+
+/* ---- Main Content ---- */
+main {
+  padding: 20px;
+}
+
+section {
+  background: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  padding: 18px;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* 在每個 section 標題上加閃爍星星 */
+h2::before {
+  content: "✨ ";
+  animation: twinkle 1.5s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+/* ---- Headings ---- */
+h2 {
+  font-size: 20px;
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #ccc;
+}
+
+/* ---- Lists ---- */
+.list {
+  padding-left: 20px;
+  margin: 8px 0 0;
+}
+
+/* ---- Links ---- */
+a {
+  color: #003366;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ff6600;
+  background: #ffff99;
+}
+
+/* ---- Footer ---- */
+footer {
+  border-top: 2px solid #003366;
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+}
+
+/* Footer 加一個跑馬燈 */
+footer marquee {
+  display: block;
+  margin-top: 10px;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+/* Navbar 基本樣式 - 2000年代復古風格 */
+.navbar {
+  width: 100%;
+  background: #000080;
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav-container a {
+  font-family: "Times New Roman", Arial, serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 10px;
+}
+
+.nav-container a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Header ---- */
+header {
+  background: linear-gradient(to bottom, #0066cc, #003366);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #000080;
+  position: relative;
+}
